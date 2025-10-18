@@ -1,5 +1,9 @@
+-- View Perguntas e Respostas por Avaliação
 CREATE OR REPLACE VIEW vw_perguntas_e_respostas_por_avaliacao AS
-select A.id_avaliacao, P.texto_pergunta, R.conteudo_resposta
+SELECT 
+    A.id_avaliacao, 
+    P.texto_pergunta, 
+    R.conteudo_resposta
 FROM avaliacao A
 JOIN contem C ON C.id_avaliacao = A.id_avaliacao
 JOIN pergunta P ON P.id_pergunta = C.id_pergunta
