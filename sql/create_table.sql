@@ -37,7 +37,7 @@ CREATE TABLE Treinamento_Sentimento (
 DROP TABLE IF EXISTS avaliacao;
 
 CREATE TABLE avaliacao (
-    id_avaliacao      INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_avaliacao      SERIAL PRIMARY KEY,
     periodo           INTEGER,
     data_hr_registro  TIMESTAMP,
     id_diretor        INTEGER,          -- FK no SQL Server (diretor). Tabela não enviada.
@@ -50,7 +50,7 @@ CREATE TABLE avaliacao (
 DROP TABLE IF EXISTS pergunta;
 
 CREATE TABLE pergunta (
-    id_pergunta       INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_pergunta       SERIAL PRIMARY KEY,
     texto_pergunta    VARCHAR(255),
     tipo_pergunta     VARCHAR(50),
     data_hr_registro  TIMESTAMP
@@ -61,7 +61,7 @@ CREATE TABLE pergunta (
 DROP TABLE IF EXISTS resposta;
 
 CREATE TABLE resposta (
-    id_resposta       INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_resposta       SERIAL PRIMARY KEY,
     conteudo_resposta TEXT,             -- nvarchar(max)
     data_hr_registro  TIMESTAMP,
     id_avaliacao      INTEGER,
