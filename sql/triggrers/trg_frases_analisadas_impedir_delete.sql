@@ -9,7 +9,6 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- Criação da Trigger 1.2
 CREATE TRIGGER before_delete_frases_analisadas
 BEFORE DELETE ON Frases_Analisadas
 FOR EACH ROW
