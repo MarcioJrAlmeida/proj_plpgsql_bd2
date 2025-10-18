@@ -1,5 +1,3 @@
-DROP FUNCTION IF EXISTS score_medio_avaliacao(integer);
-
 CREATE OR REPLACE FUNCTION score_medio_avaliacao(p_id_avaliacao integer)
 RETURNS numeric(10,2)
 LANGUAGE sql
