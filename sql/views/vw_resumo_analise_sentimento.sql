@@ -10,3 +10,7 @@ SELECT
 From frases_analisadas
 GROUP BY modelo_utilizado, sentimento_classificado
 ORDER BY modelo_utilizado, total_frases DESC;
+
+-- Apresentar um resumo estatístico das análises de sentimento realizadas 
+-- pelos modelos de Machine Learning, exibindo a quantidade de frases processadas, 
+-- a média de score e o período de execução (da primeira à última análise) por tipo de sentimento.

@@ -16,3 +16,9 @@ AS '
     modelo_mais_utilizado
   FROM vw_resumo_avaliacao
 ';
+
+-- Retornar um resumo consolidado das avaliações, agrupando informações analíticas sobre desempenho 
+-- e sentimento, a partir da view vw_resumo_avaliacao.
+-- Em outras palavras, essa função serve como porta de acesso simplificada à visão vw_resumo_avaliacao,
+-- permitindo consultar diretamente as métricas resumidas sem precisar escrever a query completa da 
+-- view.
