@@ -6,6 +6,8 @@
 -- ===============================================
 -- Tabela 1: Frases_Analisadas
 -- ===============================================
+DROP TABLE IF EXISTS Frases_Analisadas;
+
 CREATE TABLE Frases_Analisadas (
     id SERIAL PRIMARY KEY,
     id_avaliacao INTEGER,
@@ -24,6 +26,8 @@ CREATE TABLE Frases_Analisadas (
 -- ===============================================
 -- Tabela 2: Treinamento_Sentimento
 -- ===============================================
+DROP TABLE IF EXISTS Treinamento_Sentimento;
+
 CREATE TABLE Treinamento_Sentimento (
     id SERIAL PRIMARY KEY,
     contexto_pergunta TEXT,
@@ -70,6 +74,16 @@ CREATE TABLE resposta (
         FOREIGN KEY (id_avaliacao) REFERENCES avaliacao(id_avaliacao),
     CONSTRAINT fk_resposta_pergunta
         FOREIGN KEY (id_pergunta)  REFERENCES pergunta(id_pergunta)
+);
+
+DROP TABLE IF EXISTS Contem;
+
+CREATE TABLE Contem (
+    id_avaliacao INTEGER NOT NULL,
+    id_pergunta  INTEGER NOT NULL,
+    PRIMARY KEY (id_avaliacao, id_pergunta),
+    FOREIGN KEY (id_avaliacao) REFERENCES Avaliacao(id_avaliacao),
+    FOREIGN KEY (id_pergunta)  REFERENCES Pergunta(id_pergunta)
 );
 
 -- (Opcional) Índices auxiliares para FKs
