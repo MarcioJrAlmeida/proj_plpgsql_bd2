@@ -59,3 +59,6 @@ FROM agg
 LEFT JOIN senti ON senti.id_avaliacao = agg.id_avaliacao AND senti.rn = 1
 LEFT JOIN model ON model.id_avaliacao = agg.id_avaliacao AND model.rn = 1
 ORDER BY agg.id_avaliacao;
+
+-- Gerar um resumo consolidado das avaliações, apresentando indicadores gerais de desempenho, 
+-- sentimento predominante e modelo de Machine Learning mais utilizado nas análises.
