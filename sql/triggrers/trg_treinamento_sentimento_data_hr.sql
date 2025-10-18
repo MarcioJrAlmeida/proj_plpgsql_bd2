@@ -1,3 +1,6 @@
+-- A função 'trg_treinamento_sentimento_data_hr' é executada ANTES de INSERT/UPDATE.
+-- Ela sobrescreve ou preenche 'data_classificacao' com a data/hora atual.
+
 CREATE OR REPLACE FUNCTION trg_treinamento_sentimento_data_hr()
 RETURNS TRIGGER AS $$
 BEGIN
