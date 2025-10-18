@@ -9,33 +9,6 @@ INSERT INTO avaliacao (periodo, data_hr_registro, id_diretor, modelo_avaliacao, 
   (202402, '2025-07-10 15:18:31.067', 101, '{"ordem_perguntas": [4, 5, 6, 7, 8, 12, 11, 13, 20, 21, 19, 22], "qtd_perguntas_exibir": 12}', 'Inativo', '2025-07-11 17:40:16.327'),
   (202502, '2025-07-17 11:14:50.860', 101, '{"ordem_perguntas": [1, 2, 3, 5, 4], "qtd_perguntas_exibir": 5}', 'Inativo', '2025-07-17 11:19:05.803');
 
--- Tabela: Contem
-INSERT INTO Contem (id_avaliacao, id_pergunta) VALUES
-  (1, 1),
-  (1, 2),
-  (1, 3),
-  (1, 4),
-  (1, 5),
-  (1, 6),
-  (1, 7),
-  (1, 8),
-  (1, 9),
-  (1, 16),
-  (1, 17),
-  (1, 18),
-  (2, 4),
-  (2, 5),
-  (2, 6),
-  (2, 7),
-  (2, 8),
-  (2, 11),
-  (2, 12),
-  (2, 13),
-  (2, 19),
-  (2, 20),
-  (2, 21),
-  (2, 22);
-
 -- Tabela: Pergunta
 INSERT INTO pergunta (texto_pergunta, tipo_pergunta, data_hr_registro) VALUES
   ('O professor demonstra domínio profundo sobre os temas abordados?', 'Fechada', '2025-06-21 17:30:33.133'),
@@ -5229,3 +5202,30 @@ INSERT INTO Treinamento_Sentimento (contexto_pergunta, conteudo_resposta, classi
   ('Você recomendaria esse produto para outras pessoas?', 'Recomendo, prefiro o AT751 a um barbeador comum. Às vezes tenho que tirar um ou dois pelos com o barbeador comum, mas me barbear direito e sem usar espuma é ótimo. O que gostei: Corte rente mesmo sem usar água e espuma, tira 99% dos pelos. Formato firme de se segurar, fácil de lavar com água (mais que um barbeador comum!). O que não gostei: Bateria demora para carregar, barbeador puxa os pelos um pouco, deixa um ou dois pelos no rosto (é pouquíssimo).', 'positivo', NULL, '2025-07-04 11:56:57.870'),
   ('Como foi sua experiência com este produto?', 'e otimo e lindo eu tenho e adoro claro q com minha fto fica melhoor O que gostei: e otimo O que não gostei: k', 'positivo', NULL, '2025-07-04 11:56:57.870'),
   ('Como foi sua experiência com este produto?', 'o produto é bonito e pratico', 'positivo', NULL, '2025-07-04 11:56:57.870');
+
+-- Tabela: Contem
+INSERT INTO Contem (id_avaliacao, id_pergunta) VALUES
+  (1, 1),
+  (1, 2),
+  (1, 3),
+  (1, 4),
+  (1, 5),
+  (1, 6),
+  (1, 7),
+  (1, 8),
+  (1, 9),
+  (1, 16),
+  (1, 17),
+  (1, 18),
+  (2, 4),
+  (2, 5),
+  (2, 6),
+  (2, 7),
+  (2, 8),
+  (2, 11),
+  (2, 12),
+  (2, 13),
+  (2, 19),
+  (2, 20),
+  (2, 21),
+  (2, 22);
