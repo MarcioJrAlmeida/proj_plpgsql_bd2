@@ -9,6 +9,33 @@ INSERT INTO avaliacao (periodo, data_hr_registro, id_diretor, modelo_avaliacao, 
   (202402, '2025-07-10 15:18:31.067', 101, '{"ordem_perguntas": [4, 5, 6, 7, 8, 12, 11, 13, 20, 21, 19, 22], "qtd_perguntas_exibir": 12}', 'Inativo', '2025-07-11 17:40:16.327'),
   (202502, '2025-07-17 11:14:50.860', 101, '{"ordem_perguntas": [1, 2, 3, 5, 4], "qtd_perguntas_exibir": 5}', 'Inativo', '2025-07-17 11:19:05.803');
 
+-- Tabela: Contem
+INSERT INTO Contem (id_avaliacao, id_pergunta) VALUES
+  (1, 1),
+  (1, 2),
+  (1, 3),
+  (1, 4),
+  (1, 5),
+  (1, 6),
+  (1, 7),
+  (1, 8),
+  (1, 9),
+  (1, 16),
+  (1, 17),
+  (1, 18),
+  (2, 4),
+  (2, 5),
+  (2, 6),
+  (2, 7),
+  (2, 8),
+  (2, 11),
+  (2, 12),
+  (2, 13),
+  (2, 19),
+  (2, 20),
+  (2, 21),
+  (2, 22);
+
 -- Tabela: Pergunta
 INSERT INTO pergunta (texto_pergunta, tipo_pergunta, data_hr_registro) VALUES
   ('O professor demonstra domínio profundo sobre os temas abordados?', 'Fechada', '2025-06-21 17:30:33.133'),
