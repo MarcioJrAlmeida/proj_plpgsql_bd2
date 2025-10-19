@@ -5,7 +5,7 @@ CREATE OR REPLACE FUNCTION publicar_avaliacao(
 )
 RETURNS void
 LANGUAGE plpgsql
-AS '
+AS 
 DECLARE
   v_existe           boolean;
   v_status           text;
@@ -61,7 +61,6 @@ BEGIN
   RAISE NOTICE ''Avaliacao % publicada. media_score=%, ofensas=% , respostas=%'',
        p_id_avaliacao, v_media_score, v_perc_ofensivas || ''%'', v_total_respostas;
 END;
-';
 
 -- Validar se uma avaliação está pronta para ser publicada, aplicando regras de negócio automáticas.
 -- Se as condições forem atendidas, a função atualiza o status da avaliação para 'publicada'.
